@@ -1,48 +1,65 @@
-# Ex.No.-1.1-Design and Draft the given 2D Sketches in modelling software.
+# Ex.No.-1.1
+# Design and Draft the given 2D Sketches in modelling software.
 
 ## AIM
 
-To sketch the given drawing with dimensions using fusion 360 tool.
+To create a fully constrained 2D sketch of the given mechanical component using Autodesk 
+Fusion 360 by applying the specified dimensions, geometric constraints, and dimensional 
+relationships accurately. 
 
 ## REQUIREMENTS
 
-  1. Autodesk fusion 360
-  2. Windows 10
-  3. 16 GB of RAM (integrated graphics recommend 2 GB or more)
-  4. 2.5 Mbps or faster download; 500 Kbps or faster upload 
+Hardware:  
+* Processor: Intel Core i3 or above  
+* RAM: Minimum 4 GB 
+* Hard Disk: Minimum 10 GB free space 
+* Monitor: 14-inch or larger display  
+* Input Devices: Standard keyboard and 3-button mouse
+
+Software:  
+* Operating System: Windows 10/11 (64-bit) or macOS  
+* Software: Autodesk Fusion 360 – Educational/Commercial License
   
-## PROCEDURE
+## PROCEDURE:
 
-1.	Open new file and then select sketch icon.
-2.	Select the plane for sketching. 
-3.	Use sketching features (line, circle, arc, rectangle, polygon, etc.,) to draw the given sketch
+Step 1: Create New Design and Set Units Launch Autodesk Fusion and open a new design. 
+Check the Document Settings and set the units to mm. Select Create Sketch and choose the 
+XY Plane. The sketch environment with the origin is then displayed. 
 
-![image](https://user-images.githubusercontent.com/113594316/198206497-ca83d495-119b-45cd-b43d-8ca3ea7e9544.png)
+<img width="427" height="456" alt="Screenshot 2026-10-10 134636" src="https://github.com/user-attachments/assets/64e5985b-ccde-4a84-a21b-9f458fb9b0d1" />
 
-4.	Use sketch modifying features (cut, trim, mirror, move, etc.,) to edit the sketch.
+Step 2: Draw Reference/Construction Lines Choose the Line Tool (L) and turn on Construction 
+mode. Draw one vertical and one horizontal construction line through the origin (0,0). These 
+reference lines are used to maintain symmetry and accurately locate the different features
 
-![image](https://user-images.githubusercontent.com/113594316/198206562-68463016-3f32-4a87-aa5b-7a17dd023b31.png)
+<img width="305" height="395" alt="Screenshot 2026-10-10 134652" src="https://github.com/user-attachments/assets/235ca27e-8779-4908-9780-9da77df3e867" />
 
-5.	Use inspect feature to measure the dimensions of sketch.
+.Step 3: Construct the Main Hub and Internal Pattern Turn off Construction mode and create two 
+concentric circles at the origin having Ø40 mm and Ø66 mm. Draw an R6 mm circle on the inner 
+circle and create a circular pattern of 6 instances about the origin. Trim the unwanted portions to 
+obtain the required internal spline/cutout arrangement. 
 
-![image](https://user-images.githubusercontent.com/113594316/198206621-6348e8a3-4bbd-4a1f-96d3-db16fbf933d9.png)
+Step 4: Add the Main and Side Bosses Locate the upper boss at 65 mm above      the origin 
+and draw concentric circles of Ø20 mm and Ø32 mm. Locate the lower   boss 50 mm below the 
+origin and draw Ø10 mm and Ø20 mm circles. Position the side bosses at 47 mm horizontally 
+and 26 mm below the origin, with inner Ø14 mm and outer Ø20 mm circles. 
 
-6.	After finishing the sketch use finish sketch option to finalize the sketch.
+<img width="413" height="391" alt="Screenshot 2026-10-10 134716" src="https://github.com/user-attachments/assets/4339deed-23d6-45db-a47f-0853d3f8a769" />
 
-![image](https://user-images.githubusercontent.com/113594316/198206639-31c4bdb5-b13e-4106-bcf5-125c294aa03e.png)
+Step 5: Form the Outer Profile Using Arcs Create connecting arcs between the central hub and 
+the upper boss using R64 mm arcs and apply tangent constraints. Similarly, connect the central 
+hub with the left and right bosses using R20 mm tangent arcs. Add the required connecting arcs 
+between the side bosses and bottom boss with the specified radii.  
 
-7.	After finishing the sketch switch to drawing mode to plot the sketch in ISO standard.
+Step 6: Clean and Complete the Sketch Use the Trim Tool (T) to remove unnecessary portions 
+of circles and arcs. Check the dimensions, alignment, symmetry, and tangent constraints. 
+Ensure that the required profile is closed and fully constrained, then select Finish Sketch.
 
-![image](https://user-images.githubusercontent.com/113594316/198206697-2e3ead2b-7d1e-436e-bc36-aa2e73c1e78e.png)
-
-![image](https://user-images.githubusercontent.com/113594316/198206721-8ad45462-2675-4be2-964f-621c8fc4490e.png)
-
-
-## SKETCHS
-![image](https://user-images.githubusercontent.com/113594316/198208087-87ed794e-5f1c-4583-82e0-f29699dfc305.png)
-
-## OUTPUT
-
+Step 7: Extrude the Completed Profile Select Create → Extrude (E) and choose the required 
+closed profile. Exclude the internal holes and cutouts from the selected region. Enter the 
+required thickness, such as 10 mm, select New Body, and click OK to obtain the final 3D componend
 
 ## RESULT
-Thus the given sketch is drawn and drafted using fusion 360 tool.
+<img width="751" height="542" alt="Screenshot 2026-10-10 134744" src="https://github.com/user-attachments/assets/df230cca-0d43-412b-8755-3721e614bdd5" />
+<img width="1012" height="725" alt="Screenshot 2026-10-10 134020" src="https://github.com/user-attachments/assets/d3cac2c2-3a98-4b07-a791-7c81447fe24a" />
+
